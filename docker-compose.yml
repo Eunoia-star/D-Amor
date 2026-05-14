@@ -1,0 +1,47 @@
+version: '3.9'
+
+services:
+  web:
+    build: .
+    container_name: d-amor-web
+
+    ports:
+      - "8080:80"
+
+    networks:
+      - d-amor-network
+
+  mysql:
+    image: mysql:8
+    container_name: d-amor-mysql
+
+    restart: always
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: damor_db
+
+    ports:
+      - "3306:3306"
+
+    networks:
+      - d-amor-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: d-amor-phpmyadmin
+
+    restart: always
+
+    ports:
+      - "8081:80"
+
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: root123
+
+    networks:
+      - d-amor-network
+
+networks:
+  d-amor-network:
