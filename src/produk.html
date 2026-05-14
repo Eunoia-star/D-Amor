@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D'Amor - Product</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg custom-navbar shadow-sm sticky-top">
+      <div class="d-flex align-items-center">
+        <img
+          src="assets/logo.png"
+          class="img-small"
+          style="width: 60px; height: 40px"
+          alt="navlogo"
+        />
+        <a class="navbar-brand text-center text-white" href="Homepage.html">
+          D'Amor
+        </a>
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="FAQ.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Promo.html">Promo Campaign</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="testimoni.html"
+              >Testimoni Customer</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="produk.html">Produk</a>
+          </li>
+        </ul>
+
+        <form
+          class="d-flex ms-lg-3 mt-3 mt-lg-0"
+          role="search"
+          style="max-width: 250px"
+        >
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Cari bunga..."
+            aria-label="Search"
+          />
+        </form>
+
+        <div
+          class="btn px-3 py-2 ms-lg-3 mt-3 mt-lg-0 d-flex align-items-center gap-2"
+        >
+          <i class="bi bi-search-heart text-white"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <div class="mb-4">
+        <h2 class="section-title">All Products</h2>
+
+        <div
+          class="filter-wrapper d-flex flex-wrap gap-2 mt-3"
+          id="filterButtons"
+        >
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="bouquet">Bouquet</button>
+          <button class="filter-btn" data-filter="rose">Rose</button>
+          <button class="filter-btn" data-filter="lily">Lily</button>
+          <button class="filter-btn" data-filter="premium">Premium</button>
+          <button class="filter-btn" data-filter="box">Box</button>
+        </div>
+      </div>
+
+      <div class="row g-4" id="productGrid">
+        <div
+          class="col-md-4 col-sm-6 col-12 product-card-item"
+          data-category="bouquet premium"
+        >
+          <div class="product-card">
+            <img
+              src="https://lefloraflowers.com/cdn/shop/products/Pink_PurpleRosesLuxuryBouquet2400-4.jpg?v=1675975690"
+              class="product-img"
+              alt=""
+            />
+            <div class="product-info">
+              <h5>Luxury Pink Bouquet</h5>
+              <p class="prod-price">Rp 750.000</p>
+              <div class="prod-tags">
+                <span class="tag">Bouquet</span>
+                <span class="tag">Premium</span>
+              </div>
+              <div class="mt-3 text-center">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="btn btn-outline-light"
+                >
+                  <i class="bi bi-instagram"></i> Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-4 col-sm-6 col-12 product-card-item"
+          data-category="rose premium box"
+        >
+          <div class="product-card">
+            <img
+              src="https://cahayafloristmojokerto.com/wp-content/uploads/2024/03/buket-bunga-mawar-merah-besar-mojokerto.png"
+              class="product-img"
+              alt=""
+            />
+            <div class="product-info">
+              <h5>Velvet Red Roses Bouquet</h5>
+              <p class="prod-price">Rp 1.200.000</p>
+              <div class="prod-tags">
+                <span class="tag">Rose</span>
+                <span class="tag">Premium</span>
+                <span class="tag">Box</span>
+              </div>
+              <div class="mt-3 text-center">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="btn btn-outline-light"
+                >
+                  <i class="bi bi-instagram"></i> Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-4 col-sm-6 col-12 product-card-item"
+          data-category="lily bouquet"
+        >
+          <div class="product-card">
+            <img
+              src="https://www.floweradvisor.co.id/cdn/shop/files/lilies_640x_d3a22b08-3a78-4611-b3a7-b85ed10b79da_640x.jpg?v=1754992163"
+              class="product-img"
+              alt=""
+            />
+            <div class="product-info">
+              <h5>White Lily Charm</h5>
+              <p class="prod-price">Rp 560.000</p>
+              <div class="prod-tags">
+                <span class="tag">Lily</span>
+                <span class="tag">Bouquet</span>
+              </div>
+              <div class="mt-3 text-center">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="btn btn-outline-light"
+                >
+                  <i class="bi bi-instagram"></i> Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-4 col-sm-6 col-12 product-card-item"
+          data-category="rose bouquet"
+        >
+          <div class="product-card">
+            <img
+              src="https://www.gracerosefarm.com/cdn/shop/files/irrepetible.coPorJuanFelipeRubioefeunodosfotografia_240912_155644_Alexandra-GraceRoses_JF98246_1200x.jpg?v=1761842319"
+              class="product-img"
+              alt=""
+            />
+            <div class="product-info">
+              <h5>Blush Garden Roses</h5>
+              <p class="prod-price">Rp 680.000</p>
+              <div class="prod-tags">
+                <span class="tag">Rose</span>
+                <span class="tag">Bouquet</span>
+              </div>
+              <div class="mt-3 text-center">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="btn btn-outline-light"
+                >
+                  <i class="bi bi-instagram"></i> Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-4 col-sm-6 col-12 product-card-item"
+          data-category="premium box"
+        >
+          <div class="product-card">
+            <img
+              src="https://bearloonsg.com/wp-content/uploads/2021/01/6-23.jpg"
+              class="product-img"
+              alt=""
+            />
+            <div class="product-info">
+              <h5>Black Gold Premium Box</h5>
+              <p class="prod-price">Rp 1.500.000</p>
+              <div class="prod-tags">
+                <span class="tag">Premium</span>
+                <span class="tag">Box</span>
+              </div>
+              <div class="mt-3 text-center">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="btn btn-outline-light"
+                >
+                  <i class="bi bi-instagram"></i> Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-4 col-sm-6 col-12 product-card-item"
+          data-category="lily premium"
+        >
+          <div class="product-card">
+            <img
+              src="https://autumnsflorist.com/cdn/shop/files/IMG_8002.jpg?v=1745591204&width=1946"
+              class="product-img"
+              alt=""
+            />
+            <div class="product-info">
+              <h5>Golden Lily Set</h5>
+              <p class="prod-price">Rp 820.000</p>
+              <div class="prod-tags">
+                <span class="tag">Lily</span>
+                <span class="tag">Premium</span>
+              </div>
+              <div class="mt-3 text-center">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="btn btn-outline-light"
+                >
+                  <i class="bi bi-instagram"></i> Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-custom mt-5">
+      <div class="container py-5">
+        <div class="row align-items-center gy-4">
+          <!-- Dekorasi kiri -->
+          <div class="col-lg-3 col-md-3 d-none d-md-flex justify-content-start">
+            <img
+              src="assets/corner_kiri.png"
+              alt="corner decoration"
+              class="footer-decoration"
+            />
+          </div>
+
+          <!-- Informasi -->
+          <div class="col-lg-6 col-md-6 text-center">
+            <h5 class="footer-title">D'Amor</h5>
+
+            <p class="footer-text">Pekanbaru, Indonesia</p>
+
+            <p class="footer-text">
+              Operasional:<br />
+              Senin – Jumat: 09.00 - 18.00
+            </p>
+
+            <p class="footer-text">Email: D'Amor@gmail.co.id</p>
+            <p class="footer-text mb-0">WA: 0823-9967-9969</p>
+          </div>
+
+          <!-- Logo kanan -->
+          <div class="col-lg-3 col-md-3 text-center text-md-end">
+            <img src="assets/logo.png" alt="D'Amor logo" class="footer-logo" />
+          </div>
+        </div>
+
+        <hr class="footer-line" />
+
+        <div class="text-center">
+          <p class="footer-copy mb-0">© 2025 D'Amor. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="filter.js"></script>
+  </body>
+</html>
